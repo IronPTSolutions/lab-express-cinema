@@ -88,12 +88,15 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-    mongoose.connection.once('open', () => {
+  mongoose.connection.once('open', () => {
     console.info(`*** Connected to the database ${mongoose.connection.db.databaseName} ***`);
   
     mongoose.connection.db
       .dropDatabase()
       .then(() => console.log(`- Database dropped`))
+      .then(() => {
+        return Movie.create(movies);
+      })
       .then(() => console.info(`- All data created!`))
       .catch((error) => console.error(error))
       .then(() => process.exit(0));
