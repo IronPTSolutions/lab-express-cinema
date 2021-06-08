@@ -1,8 +1,144 @@
 body {
-  padding: 50px;
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: darkslateblue;
+    
+}
+
+.wrap {
+  padding: 5% 10%;
+  position: relative;
+  z-index: 2;
+  opacity: 1
+}
+
+#background{
+  background: url('../images/popcorn-1198274.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height:100vh;
+  margin: auto;
+  z-index: 0;
+  opacity: 0.2;
+  position: absolute;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1{
+  color:#fff;
+  font-size: 5rem;
+  font-weight:bold
+  
+}
+ hr{
+   color: #fff;
+ }
+.home{
+  background: url('../images/cinema.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height:100vh;
+  margin: auto;
+  z-index: 3;
+
+  
+}
+
+.home p{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.home h1{
+  color:#fff;
+  font-size: 5rem;
+  font-weight: bold;
+  max-width: 300px;
+  margin-right: 5%;
+}
+
+h3{
+  color:darkslateblue;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 3% 0;
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.btn{
+  border-radius: 50px;
+  font-size: 1.5rem;
+  padding: 0 10%;
+}
+
+.list-group{
+  display: flex;
+  flex-direction: row;
+}
+
+.detail .list-group-item{
+  border-bottom: none;
+  border-right: darkslateblue solid thin;
+}
+
+.card{
+
+  box-sizing: border-box;
+
+}
+
+.detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 80%;
+ 
+}
+
+.detail img{
+  max-width: 400px;
+  object-fit: fill;
+  padding: 0;
+  margin: 0;
+}
+
+.detail h2{
+  color: darkslateblue;
+  font-size: 3rem;
+  font-weight:100;
+}
+
+.detail hr{
+  color: darkslateblue;
+}
+
+.detail p{
+  font-size: 1rem;
+  padding: 5% 0
+}
+
+.card-link{
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+nav{
+  background-color: darkslateblue;
+  color: #fff;
 }
