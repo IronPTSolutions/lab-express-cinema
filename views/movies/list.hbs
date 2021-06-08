@@ -1,0 +1,13 @@
+{{#each movies as |movie|}}
+
+    <div class="col mb-3">
+    <div class="card movie">
+      <img class="card-img-top" src="{{ movie.image }}" alt="{{ movie.title }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ movie.title }} </h5>
+        <a href="/movies/{{id}}">See More</a>
+      </div>
+    </div>
+  </div>
+
+{{/each}}

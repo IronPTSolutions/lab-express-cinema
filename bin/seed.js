@@ -84,7 +84,7 @@ const movies = [
 
 
 const mongoose = require('mongoose');
-const Movie = require ('../models/Movie.model')
+const Movie = require ('../models/movie.model')
 
 require('../config/db.config');
 
@@ -95,11 +95,7 @@ mongoose.connection.once('open', () => {
       .dropDatabase()
       .then(() => console.log(`- Database dropped`))
       .then(() => {
-        const data = movies.map((movie) => {
-           return {...movie}
-        });
-  
-        Movie.create(data);
+        Movie.create(movies);
       })
       .then(() => console.info(`- All data created!`))
       .catch((error) => console.error(error))
