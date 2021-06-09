@@ -1,3 +1,7 @@
+const mongoose = require('mongoose');
+require('../config/db.config');
+const Movie = require ('../models/movie.model')
+
 const movies = [
     {
       title: "A Wrinkle in Time",
@@ -80,13 +84,6 @@ const movies = [
       showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
 ];
-
-
-
-const mongoose = require('mongoose');
-const Movie = require ('../models/movie.model')
-
-require('../config/db.config');
 
 mongoose.connection.once('open', () => {
     console.info(`*** Connected to the database ${mongoose.connection.db.databaseName} ***`);
