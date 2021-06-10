@@ -1,0 +1,34 @@
+<div class= "row">
+    {{#if movie}}
+    <div class = "col-3">
+        <img src="{{movie.image}}" class = "w-100" alt="{{movie.title}}"/>
+    </div>
+    <div class = "col-9 ">
+        <a href="/movies" class="btn btn-sm btn-primary rounded-pill  ">Go back</a>
+        <h5 class = "fw-bold fs-2 mt-4 ">{{movie.title}}</h5>
+        <p class = "fw-bold fs-4 mt-4">Director: {{movie.director}}</p>
+        <p class="  fw-bold fs-5 mt-4">Stars</p>
+        
+            
+       
+        <ul class="list-group ">
+            {{#each movie.stars as | star |}}
+                <p class=" fs-5 mt-4">|{{star}}</p>
+                {{/each}}
+        </ul>
+        
+        
+
+
+        
+        <p class=" fs-5 mt-4">{{movie.description}}</p>
+        <ul class="list-group list-group-horizontal">
+            {{#each movie.showtimes as | time |}}
+                <p class=" fs-5 mt-4">|{{time}}</p>
+                {{/each}}
+        </ul>
+       
+
+    </div>
+    {{/if}}
+</div>
