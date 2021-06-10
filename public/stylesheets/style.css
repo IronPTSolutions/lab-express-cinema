@@ -1,8 +1,26 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
 }
 
-a {
-  color: #00B7FF;
+
+.title1 {
+  font-size: 100px;
+  top: 20%;
+  left:60%;
+  color:white;
+}
+.title2 {
+  font-size: 100px;
+  top: 30%;
+  left:60%;
+  color:white;
+}
+.btn {
+  
+  top:40%;
+  left:61%;
+  width: 200px;
+  height:50px;
 }
