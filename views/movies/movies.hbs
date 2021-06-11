@@ -1,0 +1,28 @@
+{{#if movie}}
+
+	<div class="card detail">
+		<img src="{{movie.image}}" class="card-img-top" />
+		<div class="card-body">
+			<h2 class="card-title">{{movie.title}}</h2>
+			<small>Director:
+				<span class="text-muted">{{movie.director}}</span>
+				| Actors:
+				<span class="text-muted">{{#each
+						movie.stars
+						as |star|
+					}}{{star}},{{/each}}</span></small>
+			<hr />
+			<p class="card-text my-2">
+				{{movie.description}}
+			</p>
+			<hr />
+			<h6 class="text-muted my-3"><i class="far fa-clock"></i> SHOWTIMES</h6>
+			<ul class="list-group list-group-flush">
+				{{#each movie.showtimes as |showtime|}}
+					<li class="list-group-item">{{showtime}}</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+
+{{/if}}
