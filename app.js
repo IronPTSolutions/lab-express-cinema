@@ -7,6 +7,9 @@ require('./config/db.config');
 
 const app = express()
 
+const hbs = require('hbs');
+//REGISTER PARTIALS
+hbs.registerPartials(`${__dirname}/./views/partials`);
 /**
  * Middlewares
  */
