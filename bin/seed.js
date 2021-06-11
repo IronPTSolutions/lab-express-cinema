@@ -92,7 +92,7 @@ mongoose.connection.once('open', () => {
       .dropDatabase()
       .then(() => console.log(`- Database dropped`))
       .then(() => {
-        Movie.create(movies);
+        return Movie.create(movies);
       })
       .then(() => console.info(`- All data created!`))
       .catch((error) => console.error(error))
