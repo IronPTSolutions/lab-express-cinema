@@ -1,0 +1,24 @@
+{{#with movie}}
+  <div class="container">
+    <h2>{{title}}</h2>
+    <div class="card detail-card" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col">
+          <img id="poster" src="{{image}}" alt="{{title}}" />
+        </div>
+        <div class="col">
+          <div class="card-body">
+            <p class="card-text small">Director:{{director}}</p>
+            <p class="card-text small">Starring:{{#each stars as |star|}} {{star}} {{/each}}</p>
+            <p class="card-text">{{description}}</p>
+            <ul class="list-group list-group-flush">
+              {{#each showtimes as |showtime|}}
+                <li class="list-group-item small">{{showtime}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/with}}
