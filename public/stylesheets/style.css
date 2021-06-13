@@ -13,7 +13,7 @@ body {
   opacity: 1
 }
 
-#background{
+#background {
   background: url('../images/popcorn-1198274.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -31,16 +31,17 @@ a {
   color: #00B7FF;
 }
 
-h1{
+h1 {
   color:#fff;
   font-size: 5rem;
   font-weight:bold
   
 }
- hr{
+ hr {
    color: #fff;
  }
-.home{
+
+.home {
   background: url('../images/cinema.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -49,17 +50,15 @@ h1{
   width: 100%;
   height:100vh;
   margin: auto;
-  z-index: 3;
-
-  
+  z-index: 3; 
 }
 
-.home p{
+.home p {
   color: #fff;
   font-size: 1.5rem;
 }
 
-.home h1{
+.home h1 {
   color:#fff;
   font-size: 5rem;
   font-weight: bold;
@@ -67,78 +66,80 @@ h1{
   margin-right: 5%;
 }
 
-h3{
+h3 {
   color:darkslateblue;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 3% 0;
 }
 
-h2{
+h2 {
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-.btn{
+.btn {
   border-radius: 50px;
   font-size: 1.5rem;
   padding: 0 10%;
 }
 
-.list-group{
+.btn-dark {
+  background-color:darkslateblue;
+  border-radius: 10px;
+  border:none
+}
+
+.list-group {
   display: flex;
   flex-direction: row;
 }
 
-.detail .list-group-item{
+.detail .list-group-item {
   border-bottom: none;
   border-right: darkslateblue solid thin;
 }
 
-.card{
-
+.card {
   box-sizing: border-box;
-
 }
 
-.detail{
+.detail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 80%;
- 
 }
 
-.detail img{
+.detail img {
   max-width: 400px;
   object-fit: fill;
   padding: 0;
   margin: 0;
 }
 
-.detail h2{
+.detail h2 {
   color: darkslateblue;
   font-size: 3rem;
   font-weight:100;
 }
 
-.detail hr{
+.detail hr {
   color: darkslateblue;
 }
 
-.detail p{
+.detail p {
   font-size: 1rem;
   padding: 5% 0
 }
 
-.card-link{
+.card-link {
   text-transform: uppercase;
   text-decoration: none;
 }
 
-
-nav{
+nav {
   background-color: darkslateblue;
   color: #fff;
 }

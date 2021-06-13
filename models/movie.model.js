@@ -6,17 +6,23 @@ const schema = new Schema ({
 
     title:{
         type: String},
-      director:{
+
+    director:{
         type: String
       },
-      stars: {
-          type: [String]
+
+   stars: {
+        type: [String]
       },
+
       image:{ 
-          type: String},
-      description: {
+        type: String
+    },
+
+    description: {
           type: String
       },
+      
       showtimes:{
          type: [String]
       } 

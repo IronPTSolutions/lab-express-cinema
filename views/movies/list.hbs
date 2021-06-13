@@ -6,23 +6,15 @@
   <h2 class="text-info">Click on the movie to check the showtimes </h2>
   <div class="row">
     {{#each movies as |movie|}}
-      <div
-        class="card col-lg-3 d-flex align-items-stretch p-0 m-2 text-center flex-wrap"
-      >
-        <div class="card-body">
-          <h3 class="card-title">{{movie.title}}</h3>
-        </div>
-
-        <img src="{{movie.image}}" class="card-img-top" alt="{{movie.title}}" />
-        
-      
-
-        <div class="card-body">
-          <a href="/movies/{{movie.id}}" class="card-link">
-            <i class="far fa-eye"></i>
-            See more</a>
-        </div>
+    <div class="card col-lg-3 d-flex align-items-stretch p-0 m-2 text-center flex-wrap" >
+      <div class="card-body">
+        <h3 class="card-title">{{movie.title}}</h3>
       </div>
+      <img src="{{movie.image}}" class="card-img-top" alt="{{movie.title}}" />       
+      <div class="card-body">
+        <a href="/movies/{{movie.id}}" class="card-link"><i class="far fa-eye"></i> See more</a>
+      </div>
+    </div>
     {{/each}}
   </div>
 </div>
