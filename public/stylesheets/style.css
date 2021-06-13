@@ -84,10 +84,12 @@ h2 {
   padding: 0 10%;
 }
 
-.btn-dark {
-  background-color:darkslateblue;
+.small-bt {
+  color:darkslateblue;
   border-radius: 10px;
-  border:none
+  border:none;
+  font-size: 1rem;
+  padding: 2%
 }
 
 .list-group {

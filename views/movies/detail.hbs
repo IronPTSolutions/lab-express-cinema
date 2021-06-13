@@ -1,7 +1,7 @@
 <div id="background"></div>
 
 <div class="wrap">  
-  {{#if movie}}
+  {{#if movie}}  
   <div class="card detail">
     <img src="{{movie.image}}" class="card-img-top" />
     <div class="card-body">
@@ -15,9 +15,13 @@
         {{#each movie.showtimes as |showtime|}}
         <li class="list-group-item">{{showtime}}</li>
         {{/each}}
-      </ul>
-      <a class="btn btn-dark text-info mt-5 mb-5" href="/movies" role="button"><i class="fas fa-ticket-alt"></i> Return to movies</a>
+      </ul>      
     </div>
+    </div>
+    <div class="text-center"><a class="btn btn-light small-bt text-info mt-1 mb-1" href="/movies" role="button"><i class="fas fa-arrow-circle-left"></i>
+
+ Return to movies</a></div>
+
   </div>
   {{/if}}
 </div>
