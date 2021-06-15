@@ -14,7 +14,7 @@ module.exports.list = (req, res, next) => {
 };
 
 module.exports.detail = (req, res, next) => {
-    const movieId = req.params.movieId;
+    const movieId = req.params.id;
     Movie.findById(movieId)
     .then(movie => res.render('movies/detail', {movie}))
     .catch(next)
